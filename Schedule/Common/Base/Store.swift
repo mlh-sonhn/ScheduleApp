@@ -11,7 +11,7 @@ import Combine
 final class Store<Action, State, Environment>: Subscriber {
     let state: AnyPublisher<State, Never>
     
-    init(initial: State, environment: Environment, reducer: @escaping (inout State, Action, Environment) -> PassthroughSubject<Action, Never>) {
+    init(initial: State, environment: Environment, reducer: @escaping (inout State, Action, Environment) -> AnyPublisher<Action, Never>) {
         state = action.scan(initial) { [lock, action, cancellables] in
             var state = $0
             var cancellables = cancellables
