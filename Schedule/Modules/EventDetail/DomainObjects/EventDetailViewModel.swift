@@ -33,14 +33,14 @@ class EventDetailViewModel: ViewModelType {
     
     func transform(environment: Environment) -> (Input) -> Output {
         return { input in
-            let store = Store<Action, State, Environment>(initial: State(), environment: environment) { (state, action, environment) -> PassthroughSubject<Action, Never> in
+            let store = Store<Action, State, Environment>(initial: State(), environment: environment) { (state, action, environment) -> AnyPublisher<Action, Never> in
                 switch action {
                 case .loadEvent(let event):
                     state.event = event
                 case .updateScheduleDate(let date):
                     state.event?.scheduleDate = date
                 }
-                return .init()
+                return Empty(completeImmediately: false).eraseToAnyPublisher()
             }
             
             let action = Publishers.Merge(input.loadEvent.map { Action.loadEvent($0) },
