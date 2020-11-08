@@ -24,6 +24,7 @@
 		0421C3562557A24A00C4AE58 /* EventDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0421C3552557A24A00C4AE58 /* EventDetailViewController.storyboard */; };
 		0421C35C2557A59500C4AE58 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421C35B2557A59500C4AE58 /* EventDetailViewModel.swift */; };
 		0421C3682557A63700C4AE58 /* ScheduleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421C3672557A63700C4AE58 /* ScheduleEvent.swift */; };
+		0421C37325582E9100C4AE58 /* ActionSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421C37225582E9100C4AE58 /* ActionSubject.swift */; };
 		0422B5DB2556D1AF0021F101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0422B5DA2556D1AF0021F101 /* AppDelegate.swift */; };
 		0422B5E42556D1B10021F101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0422B5E32556D1B10021F101 /* Assets.xcassets */; };
 		0422B5E72556D1B10021F101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0422B5E52556D1B10021F101 /* LaunchScreen.storyboard */; };
@@ -71,6 +72,7 @@
 		0421C3552557A24A00C4AE58 /* EventDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetailViewController.storyboard; sourceTree = "<group>"; };
 		0421C35B2557A59500C4AE58 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		0421C3672557A63700C4AE58 /* ScheduleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEvent.swift; sourceTree = "<group>"; };
+		0421C37225582E9100C4AE58 /* ActionSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSubject.swift; sourceTree = "<group>"; };
 		0422B5D72556D1AF0021F101 /* Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0422B5DA2556D1AF0021F101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0422B5E32556D1B10021F101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				0422B6112556D1C20021F101 /* Store.swift */,
 				0422B61B2556D21C0021F101 /* Coordinator.swift */,
 				0422B6202556D2670021F101 /* ViewModelType.swift */,
+				0421C37225582E9100C4AE58 /* ActionSubject.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				0422B6212556D2670021F101 /* ViewModelType.swift in Sources */,
 				0422B61C2556D21C0021F101 /* Coordinator.swift in Sources */,
 				0422B6122556D1C20021F101 /* Store.swift in Sources */,
+				0421C37325582E9100C4AE58 /* ActionSubject.swift in Sources */,
 				0421C31425579CB500C4AE58 /* OverViewViewController.swift in Sources */,
 				0421C3682557A63700C4AE58 /* ScheduleEvent.swift in Sources */,
 				0421C32125579DAC00C4AE58 /* TaskCoordinator.swift in Sources */,

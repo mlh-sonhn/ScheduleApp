@@ -12,8 +12,8 @@ class EventDetailViewController: UIViewController {
     
     private var cancellables = Set<AnyCancellable>()
 
-    private let loadEvent = PassthroughSubject<ScheduleEvent, Never>()
-    private let updateScheduleDate = PassthroughSubject<Date, Never>()
+    private let loadEvent = ActionSubject<ScheduleEvent, Never>()
+    private let updateScheduleDate = ActionSubject<Date, Never>()
     
     var coordinator: EventDetailCoordinator!
     var viewModel: EventDetailViewModel!
@@ -30,8 +30,6 @@ class EventDetailViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         coordinator.parentCoordinator?.finish(coordinator)
-        loadEvent.send(completion: .finished)
-        updateScheduleDate.send(completion: .finished)
     }
     
     private func bindingViewModel() {
