@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040441E32559A05100C79B3D /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040441E22559A05100C79B3D /* UIControl+Combine.swift */; };
+		040441E82559A0F700C79B3D /* UIButton+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040441E72559A0F600C79B3D /* UIButton+Combine.swift */; };
 		0421C2F2255799D900C4AE58 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421C2F1255799D900C4AE58 /* TabBarController.swift */; };
 		0421C2FB25579AD300C4AE58 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421C2FA25579AD300C4AE58 /* UIViewController+Extensions.swift */; };
 		0421C30325579AF900C4AE58 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0421C30225579AF900C4AE58 /* NSObject+Extensions.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040441E22559A05100C79B3D /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
+		040441E72559A0F600C79B3D /* UIButton+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Combine.swift"; sourceTree = "<group>"; };
 		0421C2F1255799D900C4AE58 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0421C2FA25579AD300C4AE58 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		0421C30225579AF900C4AE58 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
@@ -116,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040441DB2559A04200C79B3D /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				040441E22559A05100C79B3D /* UIControl+Combine.swift */,
+				040441E72559A0F600C79B3D /* UIButton+Combine.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		0421C2F0255799AF00C4AE58 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +140,7 @@
 		0421C2F925579AC000C4AE58 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				040441DB2559A04200C79B3D /* Combine */,
 				0421C2FA25579AD300C4AE58 /* UIViewController+Extensions.swift */,
 				0421C30225579AF900C4AE58 /* NSObject+Extensions.swift */,
 			);
@@ -477,12 +491,14 @@
 				0421C33A25579E3C00C4AE58 /* ScheduleViewController.swift in Sources */,
 				0421C30325579AF900C4AE58 /* NSObject+Extensions.swift in Sources */,
 				0421C30B25579C8900C4AE58 /* OverviewCoordinator.swift in Sources */,
+				040441E32559A05100C79B3D /* UIControl+Combine.swift in Sources */,
 				0422B5DB2556D1AF0021F101 /* AppDelegate.swift in Sources */,
 				0422B6212556D2670021F101 /* ViewModelType.swift in Sources */,
 				0422B61C2556D21C0021F101 /* Coordinator.swift in Sources */,
 				0422B6122556D1C20021F101 /* Store.swift in Sources */,
 				0421C37325582E9100C4AE58 /* ActionSubject.swift in Sources */,
 				0421C31425579CB500C4AE58 /* OverViewViewController.swift in Sources */,
+				040441E82559A0F700C79B3D /* UIButton+Combine.swift in Sources */,
 				0421C3682557A63700C4AE58 /* ScheduleEvent.swift in Sources */,
 				0421C32125579DAC00C4AE58 /* TaskCoordinator.swift in Sources */,
 				0421C2FB25579AD300C4AE58 /* UIViewController+Extensions.swift in Sources */,
