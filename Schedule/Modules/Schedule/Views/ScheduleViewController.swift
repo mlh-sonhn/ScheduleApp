@@ -13,17 +13,6 @@ class ScheduleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let button = UIButton(frame: CGRect(origin: view.center, size: CGSize(width: 50, height: 30)))
-        button.setTitle("Go to detail", for: .normal)
-        button.setTitleColor(.red, for: .normal)
-        button.addTarget(self, action: #selector(gotoDetail), for: .touchUpInside)
-        view.addSubview(button)
     }
     
     @objc private func gotoDetail() {
