@@ -11,16 +11,18 @@ import Combine
 struct EventDetailEnviroment: Environment {
 }
 
+typealias ScheduleDate = (Date, Bool)
+
 class EventDetailViewModel: ViewModelType {
     
     struct Input {
         let loadEvent: AnyPublisher<ScheduleEvent, Never>
-        let updateScheduleDate: AnyPublisher<Date, Never>
+        let updateScheduleDate: AnyPublisher<ScheduleDate, Never>
     }
     
     enum Action {
         case loadEvent(ScheduleEvent)
-        case updateScheduleDate(Date)
+        case updateScheduleDate(ScheduleDate)
     }
     
     struct State {
@@ -37,8 +39,12 @@ class EventDetailViewModel: ViewModelType {
                 switch action {
                 case .loadEvent(let event):
                     state.event = event
-                case .updateScheduleDate(let date):
-                    state.event?.scheduleDate = date
+                case .updateScheduleDate((let date, let isStartDate)):
+                    if isStartDate {
+                        state.event?.startDate = date
+                    } else {
+                        state.event?.endDate = date
+                    }
                 }
                 return Empty(completeImmediately: false).eraseToAnyPublisher()
             }
