@@ -1,0 +1,30 @@
+PODS:
+  - CombineCocoa (0.2.0)
+  - CombineDataSources (0.2.5)
+  - Realm (10.1.1):
+    - Realm/Headers (= 10.1.1)
+  - Realm/Headers (10.1.1)
+  - RealmSwift (10.1.1):
+    - Realm (= 10.1.1)
+
+DEPENDENCIES:
+  - CombineCocoa
+  - CombineDataSources
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - CombineCocoa
+    - CombineDataSources
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  CombineCocoa: 92b2579a9e4a364f8ba94be7fc68335bd3d73d92
+  CombineDataSources: dcbc3b06a038ffdf620b3b4533d3ecaf76ca6a2e
+  Realm: 784ca1da1453e31a9c9adc14445421a81f316119
+  RealmSwift: cc52fe0dcea56387274dff36e19219e055a3bb84
+
+PODFILE CHECKSUM: 5ec810dfebb00d8684ecffc0f8f530d347f2a5c0
+
+COCOAPODS: 1.10.0

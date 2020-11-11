@@ -13,7 +13,7 @@ class EventDetailViewController: UIViewController {
     private var cancellables = Set<AnyCancellable>()
 
     private let loadEvent = ActionSubject<ScheduleEvent, Never>()
-    private let updateScheduleDate = ActionSubject<Date, Never>()
+    private let updateScheduleDate = ActionSubject<ScheduleDate, Never>()
     
     var coordinator: EventDetailCoordinator!
     var viewModel: EventDetailViewModel!
@@ -39,7 +39,7 @@ class EventDetailViewController: UIViewController {
         let output = viewModel.transform(environment: EventDetailEnviroment())(input)
         
         output.event.sink { event in
-            print(event?.scheduleDate)
+            print(event?.startDate)
         }.store(in: &cancellables)
     }
 
