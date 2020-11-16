@@ -7,12 +7,13 @@
 
 import UIKit
 
-class ScheduleViewController: UIViewController {
+class ScheduleViewController: TabBarChildViewController {
     
     var coordinator: ScheduleCoordinator!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup(leftTitle: "All Track Event", rightTitle: "")
     }
     
     @objc private func gotoDetail() {

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ScheduleCategory" representedClassName="ScheduleCategory" syncable="YES">
+        <attribute name="iconType" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <entity name="ScheduleEvent" representedClassName="ScheduleEvent" syncable="YES">
+        <attribute name="categoryId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="detail" optional="YES" attributeType="String"/>
+        <attribute name="endDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="hasNotification" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="locationLat" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="locationLong" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="updatedDate" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String"/>
+        <attribute name="hasNotification" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="ScheduleCategory" positionX="-36" positionY="81" width="128" height="88"/>
+        <element name="ScheduleEvent" positionX="222.25" positionY="89.8359375" width="128" height="193"/>
+        <element name="Task" positionX="238.0625" positionY="-68.80859375" width="128" height="88"/>
+    </elements>
+</model>

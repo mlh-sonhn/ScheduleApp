@@ -7,12 +7,11 @@
 
 import UIKit
 
-class TaskViewController: UIViewController {
+class TaskViewController: TabBarChildViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setup(leftTitle: "Task", rightTitle: "")
     }
 
 }
