@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import CoreData
 
 class EventDetailViewController: UIViewController {
     

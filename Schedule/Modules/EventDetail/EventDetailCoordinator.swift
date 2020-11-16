@@ -12,7 +12,7 @@ class EventDetailCoordinator: Coordinator {
     
     var scheduleEvent: ScheduleEvent = ScheduleEvent()
     
-    init(navigationController: UINavigationController, scheduleEvent: ScheduleEvent) {
+    init(navigationController: TranslucentNavigationController, scheduleEvent: ScheduleEvent) {
         super.init()
         self.scheduleEvent = scheduleEvent
         self.navigationController = navigationController

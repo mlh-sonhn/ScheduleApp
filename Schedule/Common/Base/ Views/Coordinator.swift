@@ -10,7 +10,7 @@ import UIKit
 
 protocol CoordinatorType: class {
 
-    var navigationController: UINavigationController { get set }
+    var navigationController: TranslucentNavigationController { get set }
     var parentCoordinator: CoordinatorType? { get set }
     
     func start()
@@ -21,7 +21,7 @@ protocol CoordinatorType: class {
 
 class Coordinator: CoordinatorType {
  
-    var navigationController = UINavigationController()
+    var navigationController = TranslucentNavigationController()
     var parentCoordinator: CoordinatorType?
     var childCoordinators: [CoordinatorType] = []
     

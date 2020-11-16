@@ -7,12 +7,11 @@
 
 import UIKit
 
-class OverViewViewController: UIViewController {
+class OverViewViewController: TabBarChildViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setup(leftTitle: "TODAY", rightTitle: "Ha Noi, Viet Nam")
     }
 
 }
