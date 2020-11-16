@@ -16,9 +16,9 @@ extension ScheduleCategory {
         return NSFetchRequest<ScheduleCategory>(entityName: "ScheduleCategory")
     }
 
-    @NSManaged public var iconType: Int16
-    @NSManaged public var title: String?
+    @NSManaged public var iconName: String?
     @NSManaged public var id: Int64
+    @NSManaged public var title: String?
 
 }
 

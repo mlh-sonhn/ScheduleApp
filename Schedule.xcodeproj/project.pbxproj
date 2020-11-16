@@ -44,14 +44,18 @@
 		04275A0C2561AB960045A500 /* ScheduleEvent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04275A082561AB960045A500 /* ScheduleEvent+CoreDataClass.swift */; };
 		04275A0D2561AB960045A500 /* ScheduleEvent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04275A092561AB960045A500 /* ScheduleEvent+CoreDataProperties.swift */; };
 		04275A0E2561AB960045A500 /* ScheduleCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04275A0A2561AB960045A500 /* ScheduleCategory+CoreDataClass.swift */; };
-		04275A0F2561AB960045A500 /* ScheduleCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04275A0B2561AB960045A500 /* ScheduleCategory+CoreDataProperties.swift */; };
 		043ED803255D0CB3000EEE56 /* Schedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 043ED801255D0CB3000EEE56 /* Schedule.xcdatamodeld */; };
+		046E324A2562DCBC004A41A6 /* ScheduleCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E32482562DCBC004A41A6 /* ScheduleCategory+CoreDataProperties.swift */; };
+		046E32582562DD09004A41A6 /* DefaultCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046E32572562DD09004A41A6 /* DefaultCategory.swift */; };
 		04F266F92561AE30005912A1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F266F82561AE30005912A1 /* Error.swift */; };
 		04F26719256271FB005912A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F26717256271FB005912A1 /* Localizable.strings */; };
 		04F267242562727B005912A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F267222562727B005912A1 /* InfoPlist.strings */; };
 		04F2673225627323005912A1 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2673125627323005912A1 /* String+Extensions.swift */; };
 		04F2673A25627357005912A1 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2673925627357005912A1 /* DateFormatter+Extensions.swift */; };
 		04F2673F25627372005912A1 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2673E25627372005912A1 /* Date+Extensions.swift */; };
+		04F26747256286DA005912A1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F26746256286DA005912A1 /* AppConstant.swift */; };
+		04F2674C256286F2005912A1 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2674B256286F2005912A1 /* AppColor.swift */; };
+		04F2675125628706005912A1 /* CategoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2675025628706005912A1 /* CategoryImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,8 +119,9 @@
 		04275A082561AB960045A500 /* ScheduleEvent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleEvent+CoreDataClass.swift"; sourceTree = "<group>"; };
 		04275A092561AB960045A500 /* ScheduleEvent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleEvent+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		04275A0A2561AB960045A500 /* ScheduleCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
-		04275A0B2561AB960045A500 /* ScheduleCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		043ED802255D0CB3000EEE56 /* Schedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Schedule.xcdatamodel; sourceTree = "<group>"; };
+		046E32482562DCBC004A41A6 /* ScheduleCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		046E32572562DD09004A41A6 /* DefaultCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCategory.swift; sourceTree = "<group>"; };
 		04F266F82561AE30005912A1 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		04F26718256271FB005912A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04F267232562727B005912A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -125,6 +130,9 @@
 		04F2673125627323005912A1 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		04F2673925627357005912A1 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		04F2673E25627372005912A1 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		04F26746256286DA005912A1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		04F2674B256286F2005912A1 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		04F2675025628706005912A1 /* CategoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +259,8 @@
 			children = (
 				0421C3472557A20200C4AE58 /* EventDetailCoordinator.swift */,
 				0421C34C2557A23300C4AE58 /* Views */,
-				0421C35A2557A58100C4AE58 /* DomainObjects */,
+				0421C35A2557A58100C4AE58 /* DomainModels */,
+				04F2675525628722005912A1 /* ValueObjects */,
 				0421C3662557A62400C4AE58 /* Entity */,
 			);
 			path = EventDetail;
@@ -266,12 +275,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0421C35A2557A58100C4AE58 /* DomainObjects */ = {
+		0421C35A2557A58100C4AE58 /* DomainModels */ = {
 			isa = PBXGroup;
 			children = (
 				0421C35B2557A59500C4AE58 /* EventDetailViewModel.swift */,
 			);
-			path = DomainObjects;
+			path = DomainModels;
 			sourceTree = "<group>";
 		};
 		0421C3662557A62400C4AE58 /* Entity */ = {
@@ -280,7 +289,7 @@
 				04275A082561AB960045A500 /* ScheduleEvent+CoreDataClass.swift */,
 				04275A092561AB960045A500 /* ScheduleEvent+CoreDataProperties.swift */,
 				04275A0A2561AB960045A500 /* ScheduleCategory+CoreDataClass.swift */,
-				04275A0B2561AB960045A500 /* ScheduleCategory+CoreDataProperties.swift */,
+				046E32482562DCBC004A41A6 /* ScheduleCategory+CoreDataProperties.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -382,6 +391,8 @@
 			isa = PBXGroup;
 			children = (
 				04F266F72561AE23005912A1 /* Database */,
+				04F26746256286DA005912A1 /* AppConstant.swift */,
+				04F2674B256286F2005912A1 /* AppColor.swift */,
 			);
 			path = Utitlities;
 			sourceTree = "<group>";
@@ -439,6 +450,15 @@
 				04F266F82561AE30005912A1 /* Error.swift */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		04F2675525628722005912A1 /* ValueObjects */ = {
+			isa = PBXGroup;
+			children = (
+				04F2675025628706005912A1 /* CategoryImage.swift */,
+				046E32572562DD09004A41A6 /* DefaultCategory.swift */,
+			);
+			path = ValueObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,7 +608,6 @@
 				0422B6212556D2670021F101 /* ViewModelType.swift in Sources */,
 				04275A012561A8A40045A500 /* CoreDataStack.swift in Sources */,
 				04275A0D2561AB960045A500 /* ScheduleEvent+CoreDataProperties.swift in Sources */,
-				04275A0F2561AB960045A500 /* ScheduleCategory+CoreDataProperties.swift in Sources */,
 				043ED803255D0CB3000EEE56 /* Schedule.xcdatamodeld in Sources */,
 				0422B61C2556D21C0021F101 /* Coordinator.swift in Sources */,
 				0408E13A255DA5FC007EF8FC /* Task+CoreDataProperties.swift in Sources */,
@@ -600,15 +619,20 @@
 				0421C31425579CB500C4AE58 /* OverViewViewController.swift in Sources */,
 				040441E82559A0F700C79B3D /* UIButton+Combine.swift in Sources */,
 				0421C32125579DAC00C4AE58 /* TaskCoordinator.swift in Sources */,
+				04F2675125628706005912A1 /* CategoryImage.swift in Sources */,
 				04F2673F25627372005912A1 /* Date+Extensions.swift in Sources */,
 				0421C2FB25579AD300C4AE58 /* UIViewController+Extensions.swift in Sources */,
+				046E324A2562DCBC004A41A6 /* ScheduleCategory+CoreDataProperties.swift in Sources */,
 				0408E139255DA5FC007EF8FC /* Task+CoreDataClass.swift in Sources */,
 				0421C2F2255799D900C4AE58 /* TabBarController.swift in Sources */,
+				04F26747256286DA005912A1 /* AppConstant.swift in Sources */,
 				0422B6372556D45B0021F101 /* TabCoordinator.swift in Sources */,
 				0421C32725579DCE00C4AE58 /* TaskViewController.swift in Sources */,
 				04275A0E2561AB960045A500 /* ScheduleCategory+CoreDataClass.swift in Sources */,
 				0422B6262556D2940021F101 /* AppCoordinator.swift in Sources */,
 				0421C34E2557A23E00C4AE58 /* EventDetailViewController.swift in Sources */,
+				04F2674C256286F2005912A1 /* AppColor.swift in Sources */,
+				046E32582562DD09004A41A6 /* DefaultCategory.swift in Sources */,
 				040C89E4255BE8A20011AF3C /* TabBarChildViewController.swift in Sources */,
 				0421C35C2557A59500C4AE58 /* EventDetailViewModel.swift in Sources */,
 				0421C33425579E1B00C4AE58 /* ScheduleCoordinator.swift in Sources */,
