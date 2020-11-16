@@ -14,19 +14,21 @@ public class ScheduleCategory: NSManagedObject {
 
     class func initialDefaultCategories() {
         let stack = CoreDataStack(modelName: CoreDataModelName.Schedule.rawValue)
-        do {
-            try createNewCategory(with: "First category", and: 1, in: stack)
-        } catch let error {
-            print("count not create category \(error.localizedDescription)")
+        for defaultategory in defaultCategories {
+            do {
+                try createNewCategory(with: defaultategory.title, and: defaultategory.iconName, in: stack)
+            } catch let error {
+                print("count not create category \(defaultategory.title) cause : \(error.localizedDescription)")
+            }
         }
     }
     
-    class func createNewCategory(with title: String, and iconType: Int16, in stack: CoreDataStack) throws {
+    class func createNewCategory(with title: String, and iconName: String, in stack: CoreDataStack) throws {
         guard let id = increaseId(with: stack) else { throw CoreDataError.increaseIdFailed.error }
         let scheduleCategory = ScheduleCategory(context: stack.managedContext)
         scheduleCategory.id = id
         scheduleCategory.title = title
-        scheduleCategory.iconType = iconType
+        scheduleCategory.iconName = iconName
         stack.saveContext()
     }
     

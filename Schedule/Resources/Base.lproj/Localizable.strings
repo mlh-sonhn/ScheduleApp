@@ -5,3 +5,18 @@
   Created by SonHoang on 11/16/20.
   
 */
+
+// Category Title
+"wedding" = "Wedding";
+"meeting" = "Meeting";
+"seminar" = "Seminar";
+"travel" = "Travel";
+"shopping" = "Shopping";
+"dance" = "Dance";
+"dinner" = "Dinner";
+"datting" = "Datting";
+"birthday" = "Birthday";
+"meeting_family" = "Family Meeting";
+"karaoke" = "Karaoke";
+"festival" = "Festival";
+"breakfast" = "Breakfast";

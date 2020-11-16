@@ -5,3 +5,18 @@
   Created by SonHoang on 11/16/20.
   
 */
+
+// Category Title
+"wedding" = "Lễ Cưới";
+"meeting" = "Cuộc Gặp Gỡ";
+"seminar" = "Seminar";
+"travel" = "Du Lịch";
+"shopping" = "Mua Sắm";
+"dance" = "Khiêu Vũ";
+"dinner" = "Ăn Tối";
+"datting" = "Hẹn Hò";
+"birthday" = "Sinh Nhật";
+"meeting_family" = "Họp Gia Đình";
+"karaoke" = "Karaoke";
+"festival" = "Lễ Hội";
+"breakfast" = "Ăn Sáng";
