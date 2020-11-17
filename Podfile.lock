@@ -1,0 +1,16 @@
+PODS:
+  - PredicateKit (1.0.0)
+
+DEPENDENCIES:
+  - PredicateKit
+
+SPEC REPOS:
+  trunk:
+    - PredicateKit
+
+SPEC CHECKSUMS:
+  PredicateKit: f049cb24a54adeb120e26f1579fff01748ec7bb2
+
+PODFILE CHECKSUM: bd461e4096fecdaeca1b8ae4871e47f2c66a357b
+
+COCOAPODS: 1.10.0
